@@ -10,4 +10,18 @@ public class SingleDimensionalArray {
             arr[i] = Integer.MIN_VALUE;
         }
     }
+
+    /**
+     * This method will print the elements in an Array in try block and will show an error message if an exception is found
+     */
+    public void traverseArray(){
+        try{
+            for (int i = 0; i <arr.length ; i++) {
+                System.out.print(arr[i]+" ");
+            }
+        }
+        catch (Exception e){
+            System.out.println("Array no longer exists !");
+        }
+    }
 }
