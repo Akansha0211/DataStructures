@@ -24,4 +24,25 @@ public class SingleDimensionalArray {
             System.out.println("Array no longer exists !");
         }
     }
+
+    /**
+     * This method will insert a value at a particular index
+     * @param location at that particular location element needs to be added
+     * @param valueToBeInserted the value which is to be inserted at a particular index
+     */
+    public void insert(int location , int valueToBeInserted){
+        try{
+            if (arr[location]== Integer.MIN_VALUE){
+                arr[location] = valueToBeInserted;
+                System.out.println("Successfully inserted"+valueToBeInserted);
+            }
+            else {
+                System.out.println("This cell is already occupied by another value");
+            }
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Invalid index to access array !");
+            //e.printStackTrace()
+        }
+    }
 }
