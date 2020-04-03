@@ -43,6 +43,20 @@ public class SingleDimensionalArray {
         catch(ArrayIndexOutOfBoundsException e){
             System.out.println("Invalid index to access array !");
             //e.printStackTrace()
+
+        }
+    }
+
+    /**
+     * This method will access the element at any given index
+     * @param cellNumber index whose value is to be given
+     */
+    public void accessingCell(int cellNumber){
+        try{
+            System.out.println(arr[cellNumber]);
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Invalid index to access array");
         }
     }
 }
