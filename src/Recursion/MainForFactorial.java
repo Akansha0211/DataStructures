@@ -7,6 +7,6 @@ public class MainForFactorial {
     public static void main(String[] args){
         System.out.println("Enter an integer");
         int x = scan.nextInt();
-        Factorial.factorial(x);
+        System.out.println(Factorial.factorial(x));
     }
 }
