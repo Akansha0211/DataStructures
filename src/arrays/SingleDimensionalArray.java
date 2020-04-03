@@ -37,7 +37,7 @@ public class SingleDimensionalArray {
                 System.out.println("Successfully inserted"+valueToBeInserted);
             }
             else {
-                System.out.println("This cell is already occupied by another value");
+                System.out.println("This cell is already occupied by another value"); // if we do not want to change the  already value  other than default value at a particular index
             }
         }
         catch(ArrayIndexOutOfBoundsException e){
