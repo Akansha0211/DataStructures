@@ -9,7 +9,7 @@ public class SingleDimensionArrayMain {
         sda.traverseArray();
 
         System.out.println("Inserting the value in the array...");
-        sda.insert(1,0);
+        sda.insert(0,0);
         sda.insert(1,10);
         sda.insert(2,20);
         sda.insert(3,30);
@@ -21,8 +21,8 @@ public class SingleDimensionArrayMain {
         sda.insert(1,100);
         sda.insert(12,120);
 
-        System.out.println("Accessing the cell number 1");
-        sda.accessingCell(1);
+
+
 
     }
 }

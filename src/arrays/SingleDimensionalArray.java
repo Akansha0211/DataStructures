@@ -49,7 +49,7 @@ public class SingleDimensionalArray {
 
     /**
      * This method will access the element at any given index
-     * @param cellNumber index whose value is to be given
+     * @param cellNumber index whose value is to be accessed
      */
     public void accessingCell(int cellNumber){
         try{
@@ -66,5 +66,21 @@ public class SingleDimensionalArray {
         catch(ArrayIndexOutOfBoundsException e){
             System.out.println("Cannot delete from this cell as this cell is out of bounds of the range of Array ");
         }
+    }
+
+    /**
+     * THis method prints whether the  searched value is found or not
+     * @param valueTobBeSearched  this the value which is searched in the array
+     */
+    public void searchInArray(int valueTobBeSearched){
+
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[i]==valueTobBeSearched){
+                    System.out.println("Value found !" + " at index "+ i);
+                }
+
+        }
+        System.out.println("Value to be searched is not found");
+
     }
 }
