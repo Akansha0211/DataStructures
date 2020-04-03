@@ -1,4 +1,6 @@
-package Recursion;
+package Recursion.factorial;
+
+import Recursion.factorial.Factorial;
 
 import java.util.Scanner;
 
