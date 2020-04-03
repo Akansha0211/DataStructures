@@ -21,7 +21,8 @@ public class SingleDimensionArrayMain {
         sda.insert(1,100);
         sda.insert(12,120);
 
-       ;
+        System.out.println("Accessing the cell number 1");
+        sda.accessingCell(1);
 
     }
 }
