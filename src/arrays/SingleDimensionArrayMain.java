@@ -21,5 +21,7 @@ public class SingleDimensionArrayMain {
         sda.insert(1,100);
         sda.insert(12,120);
 
+       ;
+
     }
 }

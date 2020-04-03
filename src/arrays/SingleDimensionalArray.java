@@ -59,4 +59,12 @@ public class SingleDimensionalArray {
             System.out.println("Invalid index to access array");
         }
     }
+    public void deleteValueFromArray(int location){
+        try{
+            arr[location] = Integer.MIN_VALUE;
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Cannot delete from this cell as this cell is out of bounds of the range of Array ");
+        }
+    }
 }
