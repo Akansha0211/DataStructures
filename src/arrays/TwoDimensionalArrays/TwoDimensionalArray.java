@@ -80,4 +80,22 @@ public class TwoDimensionalArray {
         }
     }
 
+    /**
+     * This method will delete an element at any given index
+     * @param row row whose element is to removed
+     * @param col col whose value is to be deleted
+     */
+    public void deleteValueInArray(int row, int col){
+        System.out.println("Deleting a value at row"+ row+"column"+col);
+        try{
+            System.out.println("Successfully deleted"+ arr[row][col]);
+            arr[row][col] = Integer.MIN_VALUE;
+        }
+        catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("Can't delete particular index as it is out of range of array");
+        }
+    }
+
+
+
 }
