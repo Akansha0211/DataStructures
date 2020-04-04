@@ -49,4 +49,35 @@ public class TwoDimensionalArray {
         }
     }
 
+    /**
+     * This method will search a particular value in the array
+     * @param value value which is to be searched
+     */
+    public void searchInArray(int value){
+        for (int rows = 0; rows < arr.length; rows++) {
+            for (int col = 0; col <arr[0].length ; col++) {
+                if (arr[rows][col]== value){
+                    System.out.println("value is found ! at row"+ rows+ " at column"+col);
+                    return;
+                }
+            }
+        }
+        System.out.println("Value not found in Array");
+    }
+
+    /**
+     * This method will access a value at any particular index
+     * @param row row which is to be accessed
+     * @param col column number which is to be accessed
+     */
+    public void accessArray(int row ,int col){
+        try{
+            System.out.println(arr[row][col]);
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Value at a particular which you wanted to access is not in the range of Array ");
+            //e.printStackTrace();
+        }
+    }
+
 }
