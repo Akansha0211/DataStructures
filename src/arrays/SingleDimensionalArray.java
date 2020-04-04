@@ -77,6 +77,7 @@ public class SingleDimensionalArray {
             for (int i = 0; i < arr.length; i++) {
                 if (arr[i]==valueTobBeSearched){
                     System.out.println("Value found !" + " at index "+ i);
+                    return;
                 }
 
         }
