@@ -12,5 +12,17 @@ public class TwoDimensionalArray {
             }
         }
     }
+    public void traverseArray(){
+        try{
+            for (int rows = 0; rows <arr.length ; rows++) {
+                for (int col = 0; col < arr[0].length; col++) {
+                    System.out.println(arr[rows][col]);
+                }
+            }
+        }
+        catch(Exception e){
+            System.out.println("Array does not exist");
+        }
+    }
 
 }
