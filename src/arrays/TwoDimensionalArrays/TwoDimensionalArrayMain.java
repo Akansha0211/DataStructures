@@ -20,6 +20,14 @@ public class TwoDimensionalArrayMain {
         System.out.println("*****************************");
         tda.accessArray(2,1);
         System.out.println("*****************************");
+        System.out.println("Value before deleting an index");
+        tda.deleteValueInArray(1,3);
+        System.out.println("/n");
+        System.out.println("Value after deleting index");
+        tda.deleteValueInArray(1,3);
+        System.out.println("*****************************");
+        tda.deleteThisArray();
+        tda.traverseArray();
 
 
 
