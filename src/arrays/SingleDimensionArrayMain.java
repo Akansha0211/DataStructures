@@ -21,6 +21,10 @@ public class SingleDimensionArrayMain {
         sda.insert(1,100);
         sda.insert(12,120);
 
+        System.out.println("Searching 30 in the array...");
+        sda.searchInArray(30);
+        
+
 
 
 
