@@ -1,4 +1,4 @@
 package arrays.TwoDimensionalArrays;
 
-public class TwoDimansionalArrayMain {
+public class TwoDimensionalArrayMain {
 }
