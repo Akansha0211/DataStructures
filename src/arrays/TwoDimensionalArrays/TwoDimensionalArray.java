@@ -20,9 +20,12 @@ public class TwoDimensionalArray {
         try{
             for (int rows = 0; rows <arr.length ; rows++) {
                 for (int col = 0; col < arr[0].length; col++) {
-                    System.out.println(arr[rows][col]);
+                    System.out.print(arr[rows][col]+" ");
                 }
+                System.out.println();
             }
+            System.out.println("\n");
+
         }
         catch(Exception e){
             System.out.println("Array does not exist");
