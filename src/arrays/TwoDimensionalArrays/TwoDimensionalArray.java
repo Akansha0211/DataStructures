@@ -95,7 +95,11 @@ public class TwoDimensionalArray {
             System.out.println("Can't delete particular index as it is out of range of array");
         }
     }
-
-
-
+    /**
+     * This method deletes the whole Array
+     */
+    public void deleteThisArray(){
+        arr = null; // giving null to the reference variable and  the array will be taken away by the garbage collector
+        System.out.println("Array has been successfully deleted");
+    }
 }
