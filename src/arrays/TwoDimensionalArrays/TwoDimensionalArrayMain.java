@@ -17,6 +17,12 @@ public class TwoDimensionalArrayMain {
         System.out.println("Searching a particular value in array");
         tda.searchInArray(4);
         tda.searchInArray(20);
+        System.out.println("*****************************");
+        tda.accessArray(2,1);
+        System.out.println("*****************************");
+
+
+
 
     }
 }
