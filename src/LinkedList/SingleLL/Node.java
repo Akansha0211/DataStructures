@@ -11,4 +11,12 @@ public class Node {
     private int data;
     private Node next;
 
+    /**
+     * Crete a constructor to create a blank node with data and with next reference as Null
+     * @param dataItem The data stored
+     */
+    private Node(int dataItem){
+        dataItem = data;
+        next = null;
+    }
 }
