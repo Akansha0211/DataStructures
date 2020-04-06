@@ -50,7 +50,12 @@ public class SingleLinkedList {
         Node node = new Node();
         node.setData(nodeValue);
 
+
     }
+    public boolean existsLinkedList(){
+        return head != null;
+    }
+
 
 
 
