@@ -40,7 +40,7 @@ public class SingleLinkedList {
         head = new Node();
         Node node = new Node();
         node.setData(nodeValue);
-        node.setNext();
+        node.setNext(null);
         head = node;
         tail = node;
         size = 1;
@@ -49,9 +49,16 @@ public class SingleLinkedList {
     public void insertLinkedList(int nodeValue,int location){
         Node node = new Node();
         node.setData(nodeValue);
-
+        if (!existsLinkedList()){
+            System.out.println("Linked List does not exists");
+            return;
+        }
+        else if (location == 0){
+            node.setNext(head);
+        }
 
     }
+
     public boolean existsLinkedList(){
         return head != null;
     }

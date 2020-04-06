@@ -46,7 +46,7 @@ public class Node {
     public void setData(int data){
         this.data = data;
     }
-    public void setNext(){
+    public void setNext(Node next){
         this.next = next;
     }
 
