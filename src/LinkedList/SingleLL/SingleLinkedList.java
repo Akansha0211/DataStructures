@@ -22,6 +22,9 @@ public class SingleLinkedList {
     public void setTail(Node tail){
         this.tail = tail;
     }
+    public void setSize(int size){
+        this.size = size;
+    }
 
     /**
      * This method will create a Single linkedList
@@ -55,7 +58,26 @@ public class SingleLinkedList {
         }
         else if (location == 0){
             node.setNext(head);
+            head = node;
         }
+        else if (location >= size){
+            node.setNext(null);
+            tail.setNext(node);
+            tail = node;
+        }
+        else {
+            Node tmpNode = head;
+           // int index = 0;
+            for ( int index = 0; index < location-1; index++) {
+                tmpNode = tmpNode.getNext(); // references node after which we should insert a new node
+            }
+            Node nextNode = tmpNode.getNext(); // this is immediate nxt node after new node
+            tmpNode.setNext(nextNode); // update reference of tmpNode to reference to new node
+            node.setNext(nextNode); // update newly added node's next
+
+        }
+        setSize(getSize()+1);
+
 
     }
 
