@@ -32,4 +32,11 @@ public class Node {
         dataItem = data;
         next = nodeRef;
     }
+    public int getData(){
+        return data;
+    }
+    public Node getNext(){
+        return next;
+    }
+
 }
