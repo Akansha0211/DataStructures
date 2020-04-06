@@ -22,12 +22,18 @@ public class SingleLinkedList {
     public void setTail(Node tail){
         this.tail = tail;
     }
-//    public Node createSingleLinkedList(int nodeValue){
-//        head = new Node();
-//        SingleLinkedList node = new SingleLinkedList();
-//        node.setData(nodeValue);
-//        return head;
-//    }
+    public Node createSingleLinkedList(int nodeValue){
+        head = new Node();
+        Node node = new Node();
+        node.setData(nodeValue);
+        node.setNext();
+        head = node;
+        tail = node;
+        size = 1;
+        return head;
+
+
+    }
 
 
 
