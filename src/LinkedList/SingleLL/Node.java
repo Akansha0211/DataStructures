@@ -19,4 +19,17 @@ public class Node {
         dataItem = data;
         next = null;
     }
+
+    /**
+     * We add nodes in two scenarios :
+     * case1: we add a node when there is no node in the linked list that was the previous case
+     * case 2: we add a node when there is already presence of other nodes as well
+     * so in case 2 when we add a node then the new node created needs to point the next node to it for that we are using here nodeRef variable
+     * @param dataItem
+     * @param nodeRef
+     */
+    private Node(int dataItem,Node nodeRef){
+        dataItem = data;
+        next = nodeRef;
+    }
 }
