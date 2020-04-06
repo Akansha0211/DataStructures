@@ -32,11 +32,22 @@ public class Node {
         dataItem = data;
         next = nodeRef;
     }
+
+    public Node() {
+
+    }
+
     public int getData(){
         return data;
     }
     public Node getNext(){
         return next;
+    }
+    public void setData(int data){
+        this.data = data;
+    }
+    public void setNext(){
+        this.next = next;
     }
 
 }
