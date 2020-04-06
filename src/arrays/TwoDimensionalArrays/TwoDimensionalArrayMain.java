@@ -28,9 +28,5 @@ public class TwoDimensionalArrayMain {
         System.out.println("*****************************");
         tda.deleteThisArray();
         tda.traverseArray();
-
-
-
-
     }
 }
