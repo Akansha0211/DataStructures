@@ -85,6 +85,33 @@ public class SingleLinkedList {
         return head != null;
     }
 
+    /**
+     * This method will traverse the entire Linked List and will print all its elements...
+     */
+    public void traverseLinkedList(){
+        if (existsLinkedList()){
+            Node tmpNode = head;
+            for (int i = 0; i < getSize(); i++) {
+                System.out.println(tmpNode.getData());
+                if (i!=getSize()-1){
+                    System.out.println(" ->");
+                }
+                tmpNode = tmpNode.getNext();
+            }
+
+
+
+        }
+        else{
+            System.out.println("Linked List does not exists !");
+        }
+        System.out.println("\n");
+
+    }
+
+
+
+
 
 
 
