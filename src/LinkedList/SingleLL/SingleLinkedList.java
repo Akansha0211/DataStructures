@@ -142,6 +142,11 @@ public class SingleLinkedList {
             return false;
 
     }
+
+    /**
+     * This method will delete a particular node at any particular location
+     * @param location loaction from which a node is to be deleted...
+     */
     public void deletionOfNode(int location){
         if (!existsLinkedList()){
             System.out.println("The linkedList does not exists");
