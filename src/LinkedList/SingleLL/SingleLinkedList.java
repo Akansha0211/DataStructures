@@ -30,7 +30,7 @@ public class SingleLinkedList {
      * This method will create a Single linkedList
      *
      * steps:
-     * step1: create a head refernce and tail refenenec and assign them with blank values
+     * step1: create a head refernce and tail refenenec and assign them with null values
      * as till now it the List is empty.
      * step 2: create a node and give data to it and se its next to Null
      * step 3: Now set the head reference to Node which you have created
