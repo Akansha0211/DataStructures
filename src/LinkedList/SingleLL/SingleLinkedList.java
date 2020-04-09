@@ -57,17 +57,19 @@ public class SingleLinkedList {
             System.out.println("Linked List does not exists");
             return;
         }
-        else if (location == 0){
-            node.setNext(head);
-            head = node;
+        else if (location == 0){ // inserting a node at first location i.e immediately after the head
+            node.setNext(head);  // new node will get the next reference which the head was having till now
+            head = node;         // and head will now be pointing to the new node added at the first position
         }
-        else if (location >= size){
-            node.setNext(null);
-            tail.setNext(node);
-            tail = node;
+        else if (location >= size){ // if node is added at the end of the Linked List
+            // & here we are considering any location greater than the size also as the last location .
+
+            node.setNext(null);     // set the next reference of the new node as null
+            tail.setNext(node);     // the node which was earlier the last node will now  be pointing to the last node created.
+            tail = node;            // tail will always be pointing to the last node to reduce Time-complexity
         }
         else {
-            Node tmpNode = head;
+            Node tmpNode = head;    //if we need to add a node at any location other than the first  and the last node
            // int index = 0;
             for ( int index = 0; index < location-1; index++) {
                 tmpNode = tmpNode.getNext(); // references node after which we should insert a new node
@@ -153,29 +155,29 @@ public class SingleLinkedList {
             System.out.println("The linkedList does not exists");
             return;
         }
-        else if (location == 0){
-            head = head.getNext();
+        else if (location == 0){ // deleting a last node
+            head = head.getNext(); // refers to the node just after the head i.e the first node.
             setSize(getSize()-1);
-            if (getSize() == 0){
-                head = tail = null;
+            if (getSize() == 0){  // if there is only one node  to be deleted in Linked List
+                head = tail = null;  // set the head and tail references both to null
             }
         }
-        else if (location >= getSize()){
+        else if (location >= getSize()){  //deletion of last node
             Node tmpNode = head;
             for (int i = 0; i < size -1; i++) {
                 tmpNode = tmpNode.getNext();
             }
-            if (tmpNode == head){
+            if (tmpNode == head){ // when there is only one node in the Linked List.
                 tail = head = null;
                 setSize(getSize()-1);
                 return;
             }
-            tmpNode.setNext(null);
+            tmpNode.setNext(null);  // when there are more nodes other than the last node to be deleted
             tail = tmpNode;
             setSize(getSize()-1);
         }
         else{
-            Node tmpNode = head;
+            Node tmpNode = head;  // deleting nodes other than the first and the last node
             for (int i = 0; i <location - 1 ; i++) {
                 tmpNode = tmpNode.getNext();
             }
