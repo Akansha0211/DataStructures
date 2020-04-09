@@ -93,9 +93,9 @@ public class SingleLinkedList {
         if (existsLinkedList()){
             Node tmpNode = head;
             for (int i = 0; i < getSize(); i++) {
-                System.out.println(tmpNode.getData());
+                System.out.print(tmpNode.getData());
                 if (i!=getSize()-1){
-                    System.out.println(" ->");
+                    System.out.print(" ->");
                 }
                 tmpNode = tmpNode.getNext();
             }
