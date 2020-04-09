@@ -109,6 +109,18 @@ public class SingleLinkedList {
 
     }
 
+    /**
+     * This method will delete the entire Linked list
+     * by setting the head and tail to null
+     * i.e by disconnecting all its other link..
+     */
+    public void deleteLinkedList(){
+        System.out.println("Deleting Linked List");
+        head = null;
+        tail = null;
+        System.out.println("Linked List deleted successfully !");
+    }
+
 
 
 
