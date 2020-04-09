@@ -121,11 +121,34 @@ public class SingleLinkedList {
         System.out.println("Linked List deleted successfully !");
     }
 
+    /**
+     * This method will a searchNode in Linked List by searching through its value
+     * @param nodeValue this the value of Node which is to searched for
+     * @return true if Node with nodeValue is found otherwise false...
+     */
+    public boolean searchNode(int nodeValue){
+        if (existsLinkedList()){
+            Node tmpNode = head;
+            for (int i = 0; i <getSize() ; i++) {
+                if (tmpNode.getData()==nodeValue){
+                    System.out.println("Found the node at location "+ i + "\n");
+                    return true;
+                }
+                tmpNode = tmpNode.getNext();
+            }
+        }
 
+            System.out.println("Node not found ! \n");
+            return false;
 
-
-
-
-
-
+    }
 }
+
+
+
+
+
+
+
+
+
