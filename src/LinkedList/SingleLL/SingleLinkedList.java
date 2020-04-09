@@ -41,6 +41,7 @@ public class SingleLinkedList {
      */
     public Node createSingleLinkedList(int nodeValue){
         head = new Node();
+        tail = new Node();
         Node node = new Node();
         node.setData(nodeValue);
         node.setNext(null);
