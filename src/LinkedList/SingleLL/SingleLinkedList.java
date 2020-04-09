@@ -142,6 +142,41 @@ public class SingleLinkedList {
             return false;
 
     }
+    public void deletionOfNode(int location){
+        if (!existsLinkedList()){
+            System.out.println("The linkedList does not exists");
+            return;
+        }
+        else if (location == 0){
+            head = head.getNext();
+            setSize(getSize()-1);
+            if (getSize() == 0){
+                head = tail = null;
+            }
+        }
+        else if (location >= getSize()){
+            Node tmpNode = head;
+            for (int i = 0; i < size -1; i++) {
+                tmpNode = tmpNode.getNext();
+            }
+            if (tmpNode == head){
+                tail = head = null;
+                setSize(getSize()-1);
+                return;
+            }
+            tmpNode.setNext(null);
+            tail = tmpNode;
+            setSize(getSize()-1);
+        }
+        else{
+            Node tmpNode = head;
+            for (int i = 0; i <location - 1 ; i++) {
+                tmpNode = tmpNode.getNext();
+            }
+            tmpNode.setNext(tmpNode.getNext().getNext());
+            setSize(getSize()-1);
+        }
+    }
 }
 
 
