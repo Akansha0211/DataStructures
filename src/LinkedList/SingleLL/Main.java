@@ -11,5 +11,16 @@ public class Main {
         list.insertLinkedList(30,4);
         list.insertLinkedList(35,5);
         list.traverseLinkedList();
+        System.out.println("Searching the node value");
+        list.searchNode(30);
+        System.out.println("Deleting the node at the location = 2");
+        System.out.println("Before deletion");
+        list.traverseLinkedList();
+        System.out.println("After deletion");
+        list.deletionOfNode(2);
+        list.traverseLinkedList();
+        System.out.println("Now deleting the entire LinkedList");
+        list.deleteLinkedList();
+        list.traverseLinkedList();
     }
 }
