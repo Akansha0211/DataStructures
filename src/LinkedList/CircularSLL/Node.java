@@ -13,5 +13,16 @@ public class Node {
         next = null;
     }
 
+    /**
+     * This constructor will create a node when there is Linked lits already present in the memory
+     * We just need to create new node and add it to the beginning of the LinedList
+     * @param dataItem  data value of the node to be added
+     * @param nodeRef   next of the new node which is added i.e next node  reference immediately after the first node
+     */
+    public Node(int dataItem, Node nodeRef){
+        dataItem = data;
+        next = nodeRef;
+    }
+
 
 }
