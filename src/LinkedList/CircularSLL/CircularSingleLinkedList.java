@@ -163,6 +163,20 @@ public class CircularSingleLinkedList {
         }
     }
 
+    /**
+     * This method will delete the entire Lined List
+     */
+    public void deleteLinkedList(){
+        System.out.println("Deleting entire Linked List");
+        head = null;
+        if (tail == null){
+            System.out.println("Linked List is already deleted , nothing to delete");
+        }
+        tail.setNext(null);
+        tail = null;
+        System.out.println("Linked list is successfully deleted !");
+    }
+
 
 
 
