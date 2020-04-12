@@ -23,6 +23,14 @@ public class Node {
         dataItem = data;
         next = nodeRef;
     }
+
+    /**
+     * Create a no parameter constructor in the Node class...
+     */
+    public Node() {
+
+    }
+
     public int getData(){
         return  data;
     }
