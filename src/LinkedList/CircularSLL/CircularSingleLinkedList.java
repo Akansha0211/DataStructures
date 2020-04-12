@@ -1,6 +1,5 @@
 package LinkedList.CircularSLL;
 
-
 public class CircularSingleLinkedList {
     private Node head;
     private  Node tail;
@@ -53,6 +52,38 @@ public class CircularSingleLinkedList {
      */
     public boolean existsLinkedList(){
         return head!= null;
+    }
+
+    public void insertInsertLinkedList(int nodeValue,int location){
+        Node node = new Node();
+        node.data = nodeValue;
+        if(!existsLinkedList()){
+            System.out.println("Linked List does not exists");
+            return;
+        }
+        else if (location == 0){
+            node.next = head;
+            //node.setNext(head);
+            head = node;
+            tail.setNext(node);
+            //tail.next = node;
+        }
+        else if (location >= size){
+            node.next = head;
+            tail.setNext(node);
+            tail = node;
+
+        }
+        else {
+            Node tmpNode = head;
+            for (int index = 0; index<location - 1;index++){
+                tmpNode = tmpNode.getNext();
+            }
+            Node nextNode = tmpNode.getNext(); // stores the reference of node just after the node which is to be added
+            tmpNode.setNext(node);
+            node.setNext(nextNode);
+        }
+        setSize(getSize()+1);
     }
 
 
