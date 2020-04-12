@@ -44,6 +44,17 @@ public class CircularSingleLinkedList {
         return head;
     }
 
+    /**
+     * This method returns the boolean condition head!= null
+     * @return will return true if head!= null and
+     * if head == null then then head will not be pointing to any LinkedList in the memory..
+     * return value of this method will further be used in other methods...
+     *
+     */
+    public boolean existsLinkedList(){
+        return head!= null;
+    }
+
 
 
 
