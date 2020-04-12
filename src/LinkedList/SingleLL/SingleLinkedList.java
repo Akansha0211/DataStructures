@@ -75,7 +75,7 @@ public class SingleLinkedList {
                 tmpNode = tmpNode.getNext(); // references node after which we should insert a new node
             }
             Node nextNode = tmpNode.getNext(); // this is immediate nxt node after new node
-            tmpNode.setNext(nextNode); // update reference of tmpNode to reference to new node
+            tmpNode.setNext(node); // update reference of tmpNode to reference to new node
             node.setNext(nextNode); // update newly added node's next
 
         }
