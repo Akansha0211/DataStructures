@@ -93,9 +93,9 @@ public class CircularSingleLinkedList {
         Node tmpNode = head;
         if (existsLinkedList()){
             for (int index = 0; index < getSize() ; index++) {
-                System.out.println(tmpNode.getData());
+                System.out.print(tmpNode.getData());
                 if (index != getSize()-1){
-                    System.out.println(" ->");
+                    System.out.print(" ->");
                 }
                 tmpNode = tmpNode.getNext();
             }
