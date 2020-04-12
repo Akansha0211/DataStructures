@@ -106,6 +106,27 @@ public class CircularSingleLinkedList {
         System.out.println("\n");
     }
 
+    /**
+     * This method will search a Node by searching with its value i.e by comparing it with the value of each node in the Linked List..
+     * @param nodeValue the node with this value is to be searched
+     * @return true if node with nodeValue is found otherwise return false...
+     */
+    public  boolean searchNode(int nodeValue){
+        Node tmpNode =  head;
+        if (existsLinkedList()){
+            for (int index = 0; index <getSize() ; index++) {
+               if (tmpNode.getData() == nodeValue){
+                   System.out.println("Found the node at location"+ index+"\n");
+                   return true;
+               }
+               tmpNode = tmpNode.getNext();
+            }
+        }
+        System.out.println("Node not found ");  // Linked List does not exists..
+        return false;
+
+    }
+
 
 
 
