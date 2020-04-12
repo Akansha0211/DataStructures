@@ -86,6 +86,26 @@ public class CircularSingleLinkedList {
         setSize(getSize()+1);
     }
 
+    /**
+     * This method will visit each node of the LinkedList and will print the data value of each of its Node...
+     */
+    public  void traverseLinkedList(){
+        Node tmpNode = head;
+        if (existsLinkedList()){
+            for (int index = 0; index < getSize() ; index++) {
+                System.out.println(tmpNode.getData());
+                if (index != getSize()-1){
+                    System.out.println(" ->");
+                }
+                tmpNode = tmpNode.getNext();
+            }
+        }
+        else {
+            System.out.println("Linked List does not exists");
+        }
+        System.out.println("\n");
+    }
+
 
 
 
