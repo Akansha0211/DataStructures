@@ -136,17 +136,23 @@ public class CircularSingleLinkedList {
             System.out.println("Linked List does not exists");
             return;
         }
-        else if (location == 0){
+        else if (location == 0) {
             head = head.getNext();
-            tail.next = head;
-            setSize(getSize()-1);
-            if (getSize()== 0){
-                head = tail = null;
+            tail.setNext(head);
+            setSize(getSize() - 1);
+            if (getSize() == 0) {
+                tail = null;
             }
-            else if (location >= getSize()){
+        }
+        else if (location >= getSize()){
                 Node tmpNode = head;
-                for (int index = 0; index <getSize() ; index++) {
+                for (int index = 0; index <getSize()-1 ; index++) {
                     tmpNode = tmpNode.getNext();
+                }
+                if (tmpNode == head){
+                    head = tail = null;
+                    setSize(getSize()-1);
+                    return;
                 }
                 tmpNode.setNext(head);
                 tail = tmpNode;
@@ -161,7 +167,7 @@ public class CircularSingleLinkedList {
                 setSize(getSize()-1);
             }
         }
-    }
+
 
     /**
      * This method will delete the entire Lined List
