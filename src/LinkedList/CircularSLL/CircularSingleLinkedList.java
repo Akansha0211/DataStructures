@@ -127,6 +127,42 @@ public class CircularSingleLinkedList {
 
     }
 
+    /**
+     * This method deletes the Node at any particular index.
+     * @param location whose Node is to be deleted...
+     */
+    public void deletionOfNode( int location){
+        if (!existsLinkedList()){
+            System.out.println("Linked List does not exists");
+            return;
+        }
+        else if (location == 0){
+            head = head.getNext();
+            tail.next = head;
+            setSize(getSize()-1);
+            if (getSize()== 0){
+                head = tail = null;
+            }
+            else if (location >= getSize()){
+                Node tmpNode = head;
+                for (int index = 0; index <getSize() ; index++) {
+                    tmpNode = tmpNode.getNext();
+                }
+                tmpNode.setNext(head);
+                tail = tmpNode;
+                setSize(getSize()-1);
+            }
+            else {
+                Node tmpNode = head;
+                for (int index = 0; index <location-1 ; index++) {
+                    tmpNode = tmpNode.getNext();
+                }
+                tmpNode.setNext(tmpNode.getNext().getNext()); // deltes the requied node
+                setSize(getSize()-1);
+            }
+        }
+    }
+
 
 
 
