@@ -93,6 +93,23 @@ public class DoubleLinkedList {
         size++; // size increased as one node is added...
     }
 
-
-
+    /**
+     * This method will search a node by matching the given nodeValue
+     * @param nodeValue dataValue which is to be searched
+     * @return true if node found otherwise false...
+     */
+    public boolean searchNode(int nodeValue){
+        if (existsLinkedList()){
+            Node tmpNode = head;
+            for (int index = 0; index <getSize(); index++) {
+                if (tmpNode.getData() == nodeValue){
+                    System.out.println("Node found at index "+ index+"\n");
+                    return true;
+                }
+                tmpNode = tmpNode.getNext();
+            }
+        }
+        System.out.println("Linked list does not exists");
+        return false;
+    }
 }
