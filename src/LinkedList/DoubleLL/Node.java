@@ -1,6 +1,7 @@
 package LinkedList.DoubleLL;
 
 public class Node {
+
     private  int data;
     private Node next;
     private Node previous;
@@ -16,6 +17,11 @@ public class Node {
         next = this.next;
         prev = previous;
     }
+    //create a no parameter constructor
+    public Node() {
+
+    }
+
     public int getData(){
         return data;
     }
