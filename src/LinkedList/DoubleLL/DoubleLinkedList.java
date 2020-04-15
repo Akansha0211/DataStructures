@@ -101,7 +101,7 @@ public class DoubleLinkedList {
     public boolean searchNode(int nodeValue){
         if (existsLinkedList()){
             Node tmpNode = head;
-            for (int index = 0; index <getSize(); index++) {
+            for (int index = 0; index <size; index++) {
                 if (tmpNode.getData() == nodeValue){
                     System.out.println("Node found at index "+ index+"\n");
                     return true;
@@ -112,4 +112,23 @@ public class DoubleLinkedList {
         System.out.println("Linked list does not exists");
         return false;
     }
+
+//    public void deleteNode(int location){
+//        if(! existsLinkedList()){
+//            System.out.println("LinkedList does not exists");
+//            return;
+//        }
+//        else if (location == 0){
+//            head = head.getNext();
+//            setSize(getSize()-1);
+//            if (getSize()==0){
+//                head = tail = null;
+//            }
+//            head = head.setNext();
+//            head.setPrevious(null);
+//        }
+//        else if(location >= size){
+//
+//        }
+//    }
 }
