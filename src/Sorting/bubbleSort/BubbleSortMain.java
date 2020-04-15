@@ -7,8 +7,9 @@ public class BubbleSortMain {
         System.out.println("Array to be sorted ");
         bubsort.printArray(array);
 
-        System.out.println("Sorted Array...");
         bubsort.bubbleSort(array);
+        System.out.println("Sorted Array...");
+
         bubsort.printArray(array);
 
     }
