@@ -22,5 +22,15 @@ public class SelectionSort {
         }
     }
 
-
+    /**
+     * This method will print the array
+     * @param array  is the array which is to be print.
+     */
+    public static void printArray(int[] array){
+        int n = array.length;
+        for (int i = 0; i <n; i++) {
+            System.out.println(array[i]+ " ");
+        }
+        System.out.println();
+    }
 }
