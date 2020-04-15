@@ -23,4 +23,15 @@ public class BubbleSort {
         }
     }
 
+    /**
+     * This method wil print the array...
+     * @param array is the array to be printed
+     */
+    public  void printArray(int[] array){
+        int n = array.length;
+        for (int i = 0; i < n; i++) {
+            System.out.println(array[i]+ " ");
+        }
+    }
+
 }
