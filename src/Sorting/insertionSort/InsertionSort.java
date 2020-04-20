@@ -9,11 +9,11 @@ public class InsertionSort {
      * First element of the array is considered to be in the sorted array and unsorted array begins from 2nd position i.e index 1
      * @param array which is to be sorted...
      */
-    public void insertionSort(int[]array){
-        for (int i = 1; i <array.length; i++) {
+    public void insertionSort(int[]array) {
+        for (int i = 1; i < array.length; i++) {
             int currentNumber = array[i];
-            int j;
-            for (j= i; array[j-1]> array[j] && j > 0; j--) {
+            int j = i;
+            for (; array[j-1]> array[j] && j > 0; j--) {
                 int temp = array[j];
                 array[j] = array[j-1];
                 array[j-1] = temp;
