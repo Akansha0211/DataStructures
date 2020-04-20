@@ -14,7 +14,9 @@ public class InsertionSort {
             int currentNumber = array[i];
             int j = i;
             for (; array[j-1]>array[j] ; j--) {
+                int temp = array[j];
                 array[j] = array[j-1];
+                array[j-1] = temp;
             }
             array[j] = currentNumber;
         }
