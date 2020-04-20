@@ -19,4 +19,11 @@ public class InsertionSort {
             array[j] = currentNumber;
         }
     }
+    public void printArray(int[] A){
+        int sizeOfArray = A.length;
+        for (int i = 0; i <sizeOfArray ; i++) {
+            System.out.println(A[i]+" ");
+        }
+        System.out.println();
+    }
 }
