@@ -15,11 +15,10 @@ public class InsertionSort {
         for (int i = 1; i < n; i++) {
             int currentNumber = array[i];
             int j = i;
-            while (j>0 && array[j-1]>currentNumber ){
+            for (; j>0 && array[j-1]>currentNumber ; j--) {
                 int temp = array[j];
                 array[j] = array[j-1];
                 array[j-1] = temp;
-                j--;
             }
             array[j] = currentNumber;
         }
