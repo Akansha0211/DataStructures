@@ -9,23 +9,30 @@ public class InsertionSort {
      * First element of the array is considered to be in the sorted array and unsorted array begins from 2nd position i.e index 1
      * @param array which is to be sorted...
      */
+
     public void insertionSort(int[]array) {
-        for (int i = 1; i < array.length; i++) {
+       int n = array.length;
+        for (int i = 1; i < n; i++) {
             int currentNumber = array[i];
             int j = i;
-            for (; array[j-1]> array[j] && j > 0; j--) {
+            while (j>0 && array[j-1]>currentNumber ){
                 int temp = array[j];
                 array[j] = array[j-1];
                 array[j-1] = temp;
+                j--;
             }
             array[j] = currentNumber;
         }
     }
     public void printArray(int[] A){
         int sizeOfArray = A.length;
-        for (int i = 0; i <sizeOfArray ; i++) {
+        for (int i =0 ; i <sizeOfArray ; i++) {
             System.out.print(A[i]+" ");
         }
         System.out.println();
     }
+
+
+
+
 }
