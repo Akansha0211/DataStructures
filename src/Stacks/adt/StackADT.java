@@ -25,5 +25,10 @@ public interface StackADT<E> {
      * @ throws NoSuchElementException if Stack is Empty
      */
     E pop();
-//    boolean isEmpty();
+
+    /**
+     * This method returns true if the Stack is Empty otherwise returns false
+     * @return boolean value
+     */
+    boolean isEmpty();
 }
