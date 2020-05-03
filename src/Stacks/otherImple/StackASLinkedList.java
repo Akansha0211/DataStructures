@@ -22,5 +22,22 @@ public class StackASLinkedList {
         else return false;
     }
 
+    /**
+     * This method will push the node Value given as parameter on the Stack
+     * @param nodeValue value which is pushed on the Stack i.e it is the top of the Stack
+     */
+    public void push(int nodeValue){
+       Node newNode = new Node(nodeValue);
+       if(head == null){
+           head = newNode;
+       }
+       else {
+           newNode.data = nodeValue;
+           newNode.next = head;
+           head = newNode;
+       }
+        System.out.println(nodeValue  + " is pushed to the Stack");
+    }
+
 
 }
