@@ -2,6 +2,8 @@ package Stacks.definition;
 
 import Stacks.adt.StackADT;
 
+import java.util.NoSuchElementException;
+
 public class MyStack<E> implements StackADT<E>{
 
     private Node<E> top = null;
@@ -20,7 +22,15 @@ public class MyStack<E> implements StackADT<E>{
 
     @Override
     public E pop() {
-        return null;
+       E response = null;
+       if (isEmpty()){
+           throw new NoSuchElementException("Stack Underflow");
+       }
+       else {
+           Node<E> tmpNode = top;
+           response = tmpNode.getData();
+       }
+       return response;
     }
 
     @Override
