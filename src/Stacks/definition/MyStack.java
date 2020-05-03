@@ -31,9 +31,13 @@ public class MyStack<E> implements StackADT<E>{
     @Override
     public E pop() {
        E response = null;
-       Node<E> tmpNode = top;
+       Node<E> tmpNode = top;  // store the top Of Stack (node) in the variable
        if (tmpNode != null){
+           // get the data of the top of the stack
            response = tmpNode.getData();
+           // top of the Stack now points to the next element and ths removing the Node that was earlier the top of the Stack
+           top = top.getNext();
+           //Now reduce the size by one Node
            size--;
        }
        return response;
