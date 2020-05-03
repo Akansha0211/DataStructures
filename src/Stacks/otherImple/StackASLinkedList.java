@@ -71,5 +71,13 @@ public class StackASLinkedList {
         }
     }
 
+    /**
+     * This method deletes entire Stack
+     */
+    public void deleteStack(){
+        head = null;
+        System.out.println("Sack is successfully deleted!");
+    }
+
 
 }
