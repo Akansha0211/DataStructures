@@ -1,4 +1,7 @@
 package Stacks.adt;
 
-public interface StackADT {
+public interface StackADT<E> {
+
+
+
 }
