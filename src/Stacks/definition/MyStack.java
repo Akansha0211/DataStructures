@@ -9,7 +9,8 @@ public class MyStack<E> implements StackADT<E>{
 
     @Override
     public void push(E data) {
-
+        top = new Node<>(data,top); // create a node with data and set the reference to the top node
+        size++;
     }
 
     @Override
