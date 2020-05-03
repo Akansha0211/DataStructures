@@ -25,7 +25,7 @@ public class MyStack<E> implements StackADT<E>{
 
     @Override
     public boolean isEmpty() {
-        return false;
+        return size == 0;  //returns true if size == 0 i.e Stack is empty
     }
 
     private static class Node<E>{
