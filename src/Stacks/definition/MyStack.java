@@ -3,9 +3,13 @@ package Stacks.definition;
 import Stacks.adt.StackADT;
 
 public class MyStack<E> implements StackADT<E>{
+
+    private Node<E> top = null;
+    private int size = 0;
+
     @Override
-    public E push(E data) {
-        return null;
+    public void push(E data) {
+
     }
 
     @Override
