@@ -30,7 +30,13 @@ public class MyStack<E> implements StackADT<E>{
 
     @Override
     public E pop() {
-       return null;
+       E response = null;
+       Node<E> tmpNode = top;
+       if (tmpNode != null){
+           response = tmpNode.getData();
+           size--;
+       }
+       return response;
     }
 
     @Override
