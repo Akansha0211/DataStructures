@@ -17,20 +17,20 @@ public class MyStack<E> implements StackADT<E>{
 
     @Override
     public E peek() {
-        return null;
+        E response = null;
+        if (isEmpty()){
+            throw new NoSuchElementException("Stack Underflow");
+        }
+        else {
+            Node<E> tmpNode = top; // In Stack last added node is the top
+            response = tmpNode.getData();
+        }
+        return response;
     }
 
     @Override
     public E pop() {
-       E response = null;
-       if (isEmpty()){
-           throw new NoSuchElementException("Stack Underflow");
-       }
-       else {
-           Node<E> tmpNode = top;
-           response = tmpNode.getData();
-       }
-       return response;
+       return null;
     }
 
     @Override
