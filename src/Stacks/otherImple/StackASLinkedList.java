@@ -56,5 +56,20 @@ public class StackASLinkedList {
         return tmpNodeData;
     }
 
+    /**
+     * This method will return the top of the Stack without removing it
+     * without even changing the Top of the Stack
+     * @return  top of the Stack...
+     */
+    public int peek(){
+        if (isEmpty()){
+            System.out.println("Stack is Empty");
+            return Integer.MIN_VALUE;
+        }
+        else {
+            return head.data;
+        }
+    }
+
 
 }
