@@ -39,5 +39,22 @@ public class StackASLinkedList {
         System.out.println(nodeValue  + " is pushed to the Stack");
     }
 
+    /**
+     * This method will remove the element from the top of the Stack
+     * @return the deleted top of Stack
+     */
+    public int pop(){
+        //int tmpNodeData = Integer.parseInt(null);
+        int tmpNodeData = Integer.MIN_VALUE; // - 2^31
+        if (isEmpty()){
+            System.out.println("Stack is Empty");
+        }
+        else {
+            tmpNodeData = head.data;
+            head = head.next;
+        }
+        return tmpNodeData;
+    }
+
 
 }
