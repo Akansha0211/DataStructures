@@ -2,19 +2,19 @@ package Stacks.definition;
 
 import Stacks.adt.StackADT;
 
-public class MyStack<E> implements StackADT {
+public class MyStack<E> implements StackADT<E>{
     @Override
-    public Object push(Object obj) {
+    public E push(E data) {
         return null;
     }
 
     @Override
-    public Object peek() {
+    public E peek() {
         return null;
     }
 
     @Override
-    public Object pop() {
+    public E pop() {
         return null;
     }
 
