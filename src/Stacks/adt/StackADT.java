@@ -17,6 +17,13 @@ public interface StackADT<E> {
      * @ throws NoSuchElementException if the Stack is Empty
      */
     E peek();
-//    E pop();
+
+    /**
+     * This method returns the Top of the Stack and removes it
+     * @post The Stack is one item smaller
+     * @return The item at the top of the Stack
+     * @ throws NoSuchElementException if Stack is Empty
+     */
+    E pop();
 //    boolean isEmpty();
 }
