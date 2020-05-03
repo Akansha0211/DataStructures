@@ -9,6 +9,7 @@ public class Main {
         stack.push(40);
         stack.pop();
         stack.pop();
+        stack.deleteStack();
         System.out.println(stack.peek());
     }
 }
