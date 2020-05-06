@@ -78,4 +78,12 @@ public class MyQueue {
         }
         return tmpNode;
     }
+
+    /**
+     * This method will give the size of the Queue
+     * @return the size of the Queue
+     */
+    public int getSize(){
+        return size;
+    }
 }
