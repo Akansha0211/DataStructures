@@ -55,8 +55,31 @@ public class MyQueue {
         else return false;
     }
 
-//    public void dequeue(){
-//
-//    }
+
+    /**
+     * This method will remove the element from the Ring Buffer which is used in case of Circular Array
+     * @return the deleted element from the Queue...
+     */
+    public int dequeue(){
+        int response = 0;
+        if (isEmpty()){
+            System.out.println("Queue is Empty");
+        }else {
+            response = arr[front];
+            if (rear == front){
+                front = rear = -1;  // when there is only one element which is to be deleted from the Queue
+
+            }
+            else if (front+1 == size){
+                front = 0;
+            }
+            else {
+                front++;
+            }
+
+        }
+        size--;
+        return response;
+    }
 
 }
