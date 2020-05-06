@@ -42,7 +42,21 @@ public class MyQueue {
             rear++;
             arr[rear] = value;
         }
-
     }
+
+    /**
+     * This method will check whether the Queue is empty or not
+     * @return true if Queue is empty otherwise false...
+     */
+    public boolean isEmpty(){
+        if(rear == -1){
+            return true;
+        }
+        else return false;
+    }
+
+//    public void dequeue(){
+//
+//    }
 
 }
