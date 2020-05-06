@@ -86,12 +86,20 @@ public class MyQueue {
      * This method returns the front element of the Queue
      * without deleting it
      * @return front element...
+//     */
+//    public int peek(){
+//        if (!isEmpty()){
+//            return arr[front];
+//        }
+//        return Integer.parseInt(null);
+//    }
+
+    /**
+     * This method returns the size of the Array
+     * @return size of the Array...
      */
-    public int peek(){
-        if (!isEmpty()){
-            return arr[front];
-        }
-        return Integer.parseInt(null);
+    public int getSize(){
+        return size;
     }
 
 }
