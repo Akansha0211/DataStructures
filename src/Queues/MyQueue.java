@@ -65,4 +65,17 @@ public class MyQueue {
         }
         return tmpNode;  // return null if the Queue is Empty...
     }
+
+    /**
+     * This method will return the front element from the Queue
+     * Without deleting the front element
+     * @return the front element
+     */
+    public Node peek(){
+        Node tmpNode = null;
+        if(!isEmpty()){
+            tmpNode = new Node(front.getData());
+        }
+        return tmpNode;
+    }
 }
