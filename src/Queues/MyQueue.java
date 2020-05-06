@@ -22,4 +22,25 @@ public class MyQueue {
         }
          return response;
     }
+
+    /**
+     * This method will insert a element in the queue.
+     * Since it is a linear queue so adding of element is at one end
+     * We are here considering the rear end is end where insertion is done.
+     * So can't add at the other end .Only removal of elements i.e dequeue operation can be done from the front
+     * @param nodeValue value which is added ....
+     */
+    public void enQueue(int nodeValue){
+        Node node = new Node(nodeValue); // create a node and add value to it...
+        node.setNext(null);
+        if (rear == null){
+            front = rear = node;
+            size++;
+        }
+        else {
+            rear.setNext(node);
+            rear = node;
+            size++;
+        }
+    }
 }
