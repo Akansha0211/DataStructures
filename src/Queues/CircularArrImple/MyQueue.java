@@ -82,4 +82,16 @@ public class MyQueue {
         return response;
     }
 
+    /**
+     * This method returns the front element of the Queue
+     * without deleting it
+     * @return front element...
+     */
+    public int peek(){
+        if (!isEmpty()){
+            return arr[front];
+        }
+        return Integer.parseInt(null);
+    }
+
 }
