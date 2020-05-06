@@ -28,8 +28,21 @@ public class MyQueue {
         else return false;
     }
 
-//    public void enQueue(int value){
-//
-//    }
+    /**
+     * This method will insert the item in the  Circular Queue
+     * @param value to be added....
+     */
+    public void enQueue(int value){
+        if (isFull()){
+            System.out.println("Queue is full");
+        }else if (rear+1 == size){
+            rear = 0;
+            arr[rear] = value;
+        }else {
+            rear++;
+            arr[rear] = value;
+        }
+
+    }
 
 }
