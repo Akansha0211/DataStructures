@@ -80,4 +80,12 @@ public class MyQueue {
         return response;
     }
 
+    /**
+     * This method will return size of the Queue
+     * @return size of the Queue...
+     */
+    public int getSize(){
+        return size;
+    }
+
 }
