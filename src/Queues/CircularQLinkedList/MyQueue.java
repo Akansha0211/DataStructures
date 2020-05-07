@@ -43,4 +43,28 @@ public class MyQueue {
 
     }
 
+    /**
+     * This method will delete the front from the Queue
+     * @return the front ...
+     */
+    public Node dequeue(){
+        Node response = null;
+        if(!isEmpty()) {
+            if (front == rear) {
+                front = rear = null; // when there is only one Node in the Queue
+                size--;
+            }
+            else {
+                response = front;
+                front = front.getNext();
+                rear = front;
+//                response = front;
+//                rear = response.getNext();
+
+                size--;
+            }
+        }
+        return response;
+    }
+
 }
