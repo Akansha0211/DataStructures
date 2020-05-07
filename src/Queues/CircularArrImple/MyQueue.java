@@ -8,8 +8,8 @@ public class MyQueue {
     int size;
     int[]arr = new int[size];
 
-    MyQueue(int size){
-        this.size = size;
+    MyQueue(){
+        size = 0;
         front = rear = -1;
         arr = new int[size];
     }
