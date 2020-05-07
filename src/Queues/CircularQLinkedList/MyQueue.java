@@ -67,4 +67,17 @@ public class MyQueue {
         return response;
     }
 
+    /**
+     * This method will return the front fo the Queue
+     * @return front of the Queue...
+     */
+    public Node peek(){
+        Node response = null;
+        if (!isEmpty()){
+            response = front;
+            //response = rear.getNext();
+        }
+        return response;
+    }
+
 }
