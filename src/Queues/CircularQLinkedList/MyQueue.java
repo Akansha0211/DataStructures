@@ -11,4 +11,16 @@ public class MyQueue {
         size = 0;
     }
 
+    /**
+     * This method will check whether the Queue is Empty or not
+     * @return true if the Queue is Empty otherwise return false...
+     */
+    public boolean isEmpty(){
+        boolean response = false;
+        if(front == null){
+            response = true;
+        }
+        return response;
+    }
+
 }
