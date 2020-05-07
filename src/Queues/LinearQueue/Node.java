@@ -1,4 +1,4 @@
-package Queues;
+package Queues.LinearQueue;
 
 public class Node {
     private int data;

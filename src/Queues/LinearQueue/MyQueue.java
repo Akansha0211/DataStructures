@@ -1,4 +1,4 @@
-package Queues;
+package Queues.LinearQueue;
 
 public class MyQueue {
     private Node front; // works as like head
