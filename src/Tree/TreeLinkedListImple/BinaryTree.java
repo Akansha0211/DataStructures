@@ -40,4 +40,19 @@ public class BinaryTree {
             }
         }
     }
+
+    /**
+     * This method will traverse the Tree in InOrder manner.
+     * left node
+     * root
+     * Right node
+     * @param node
+     */
+    public void traverseInOrder(Node node){
+        if (node != null){
+            traverseInOrder(node.left);
+            System.out.print(" "+ node.value);
+            traverseInOrder(node.right);
+        }
+    }
 }
