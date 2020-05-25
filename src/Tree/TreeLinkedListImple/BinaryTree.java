@@ -1,7 +1,7 @@
 package Tree.TreeLinkedListImple;
 
 public class BinaryTree {
-    public class Node{
+    public static class Node{
         int value;
         Node left;
         Node right;
