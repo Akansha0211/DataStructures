@@ -63,4 +63,12 @@ public class BinaryTree {
             tarversePreOder(node.right);
         }
     }
+
+    public void traversePostOder(Node node){
+        if (node != null){
+            traversePostOder(node.left);
+            traversePostOder(node.right);
+            System.out.println(" "+ node.value);
+        }
+    }
 }

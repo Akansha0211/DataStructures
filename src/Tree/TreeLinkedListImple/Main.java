@@ -18,7 +18,7 @@ public class Main {
         System.out.println("Traversing tree in pre-Order");
         binaryTree.tarversePreOder(root);
 
-//        System.out.println("Traversing tree in postOrder");
-//        binaryTree.
+        System.out.println("Traversing tree in postOrder");
+        binaryTree.traversePostOder(root);
     }
 }
