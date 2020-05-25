@@ -58,7 +58,7 @@ public class BinaryTree {
 
     public void tarversePreOder(Node node){
         if (node != null){
-            System.out.println(" "+node.value);
+            System.out.print(" "+node.value);
             tarversePreOder(node.left);
             tarversePreOder(node.right);
         }
@@ -68,7 +68,7 @@ public class BinaryTree {
         if (node != null){
             traversePostOder(node.left);
             traversePostOder(node.right);
-            System.out.println(" "+ node.value);
+            System.out.print(" "+ node.value);
         }
     }
 }
