@@ -55,4 +55,12 @@ public class BinaryTree {
             traverseInOrder(node.right);
         }
     }
+
+    public void tarversePreOder(Node node){
+        if (node != null){
+            System.out.println(" "+node.value);
+            tarversePreOder(node.left);
+            tarversePreOder(node.right);
+        }
+    }
 }
