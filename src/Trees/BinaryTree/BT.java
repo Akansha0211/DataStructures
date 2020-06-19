@@ -13,6 +13,8 @@ package Trees.BinaryTree;
  *    Now to search any node you will have to search entire tree in worst case scenario (Time complexity = O(n))
  *    As there is no ordering.
  *    Insertion of node is done in level order.
+ *    But time complexity in case of BST is O(log n).
+ *
  */
 public class BT implements BTadt{
     private Node root;
@@ -88,8 +90,8 @@ public class BT implements BTadt{
     }
     public void postOrder(Node root){
         if(root!=null){
-            postOrder(root.left);
-            postOrder(root.right);
+            postOrder(root.getLeft());
+            postOrder(root.getRight());
             System.out.println(root.getData());
         }
     }
