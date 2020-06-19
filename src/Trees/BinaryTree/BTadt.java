@@ -1,8 +1,8 @@
 package Trees.BinaryTree;
 
 public interface BTadt {
-    boolean isEmpty(int data);
-    void insert();
+    boolean isEmpty();
+    void insert(int data);
     boolean search();
     void inOrder();
     void preOrder();

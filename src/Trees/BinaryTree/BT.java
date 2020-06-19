@@ -21,12 +21,12 @@ public class BT implements BTadt{
     }
 
     @Override
-    public boolean isEmpty(int data) {
+    public boolean isEmpty() {
         return root == null;
     }
 
     @Override
-    public void insert() {
+    public void insert(int data) {
 
     }
 
