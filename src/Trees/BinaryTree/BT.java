@@ -27,7 +27,18 @@ public class BT implements BTadt{
 
     @Override
     public void insert(int data) {
-
+        root = insert(root,data);
+    }
+    public Node insert(Node currentNode , int data){
+        if (currentNode == null){
+            currentNode = new Node(data);
+        }
+        else if (data< currentNode.getData()){
+            currentNode.left = insert(currentNode.left,data);
+        }else {
+            currentNode.right = insert(currentNode.right,data);
+        }
+        return currentNode;
     }
 
     @Override
@@ -39,6 +50,7 @@ public class BT implements BTadt{
     public void inOrder() {
 
     }
+
 
     @Override
     public void preOrder() {
