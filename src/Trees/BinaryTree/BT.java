@@ -59,13 +59,27 @@ public class BT implements BTadt{
 
     @Override
     public void inOrder() {
-
+        inOrder(root);
+    }
+    public void inOrder(Node root){
+        if(root != null){
+            inOrder(root.left);
+            System.out.println(root.getData());
+            inOrder(root.right);
+        }
     }
 
 
     @Override
     public void preOrder() {
-
+        preOrder(root);
+    }
+    public void preOrder(Node root){
+        if (root!=null){
+            System.out.println(root.getData());
+            preOrder(root.left);
+            preOrder(root.right);
+        }
     }
 
     @Override
