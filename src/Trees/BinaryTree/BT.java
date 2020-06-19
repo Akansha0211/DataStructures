@@ -15,4 +15,8 @@ package Trees.BinaryTree;
  *    Insertion of node is done in level order.
  */
 public class BT {
+    private Node root;
+    public BT(){
+        root = null;
+    }
 }
