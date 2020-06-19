@@ -90,7 +90,7 @@ public class BT implements BTadt{
         if(root!=null){
             postOrder(root.left);
             postOrder(root.right);
-            System.out.println(root);
+            System.out.println(root.getData());
         }
     }
 }
