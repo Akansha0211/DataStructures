@@ -14,9 +14,39 @@ package Trees.BinaryTree;
  *    As there is no ordering.
  *    Insertion of node is done in level order.
  */
-public class BT {
+public class BT implements BTadt{
     private Node root;
     public BT(){
         root = null;
+    }
+
+    @Override
+    public boolean isEmpty(int data) {
+        return root == null;
+    }
+
+    @Override
+    public void insert() {
+
+    }
+
+    @Override
+    public boolean search() {
+        return false;
+    }
+
+    @Override
+    public void inOrder() {
+
+    }
+
+    @Override
+    public void preOrder() {
+
+    }
+
+    @Override
+    public void postOrder() {
+
     }
 }
