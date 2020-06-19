@@ -27,16 +27,17 @@ public class Main {
                     break;
 
             }
-            System.out.println("\n Post Order:");
-            binaryTree.postOrder();
-            System.out.println("\n Pre Order:");
-            binaryTree.preOrder();
-            System.out.println("\n InOrder:");
-            binaryTree.inOrder();
+
 
             System.out.println("Do you want to continue (Type y or n)\n");
             ch = scanner.next().charAt(0);
 
         }while (ch== 'Y'|| ch == 'y');
+        System.out.println("\n Post Order:");
+        binaryTree.postOrder();
+        System.out.println("\n Pre Order:");
+        binaryTree.preOrder();
+        System.out.println("\n InOrder:");
+        binaryTree.inOrder();
     }
 }
