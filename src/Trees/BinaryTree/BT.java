@@ -42,7 +42,18 @@ public class BT implements BTadt{
     }
 
     @Override
-    public boolean search() {
+    public boolean search(int value) {
+        return search(root,value);
+    }
+    public boolean search(Node root, int value){
+        if (root.getData()==value){
+            return true;
+        }
+        else if(value< root.getData()){
+            search(root.left,value);
+        }else if (value>root.getData()){
+            search(root.right,value);
+        }
         return false;
     }
 
