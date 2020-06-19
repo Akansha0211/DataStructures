@@ -63,9 +63,9 @@ public class BT implements BTadt{
     }
     public void inOrder(Node root){
         if(root != null){
-            inOrder(root.left);
+            inOrder(root.getLeft());
             System.out.println(root.getData());
-            inOrder(root.right);
+            inOrder(root.getRight());
         }
     }
 
@@ -77,8 +77,8 @@ public class BT implements BTadt{
     public void preOrder(Node root){
         if (root!=null){
             System.out.println(root.getData());
-            preOrder(root.left);
-            preOrder(root.right);
+            preOrder(root.getLeft());
+            preOrder(root.getRight());
         }
     }
 
