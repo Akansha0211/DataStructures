@@ -1,5 +1,4 @@
-package Trees;
-
+package Trees.BinaryTree;
 /**
  * A binary tree is a non-linear DS where each node can have atmost two children.
  *                2
