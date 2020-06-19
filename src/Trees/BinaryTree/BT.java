@@ -84,6 +84,13 @@ public class BT implements BTadt{
 
     @Override
     public void postOrder() {
-
+        postOrder(root);
+    }
+    public void postOrder(Node root){
+        if(root!=null){
+            postOrder(root.left);
+            postOrder(root.right);
+            System.out.println(root);
+        }
     }
 }
